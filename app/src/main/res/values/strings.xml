@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">GitTest</string>
+    <string name="noUser">Таких пользователей не существует</string>
+</resources>
