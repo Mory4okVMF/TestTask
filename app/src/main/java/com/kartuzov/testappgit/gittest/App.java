@@ -7,7 +7,7 @@ import retrofit2.converter.gson.GsonConverterFactory;
 
 public class App extends Application {
 
-    private static MyInterface client;
+    private static SearchClientService client;
     private Retrofit retrofit;
 
     @Override
@@ -18,10 +18,10 @@ public class App extends Application {
                 .baseUrl("https://api.github.com/")
                 .addConverterFactory(GsonConverterFactory.create())
                 .build();
-        client = retrofit.create(MyInterface.class);
+        client = retrofit.create(SearchClientService.class);
     }
 
-    public static MyInterface getApi() {
+    public static SearchClientService getApi() {
         return client;
     }
 }

@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">GitTest</string>
     <string name="noUser">Таких пользователей не существует</string>
+    <string name="errConnect">Не удалось подключиться к серверу</string>
 </resources>

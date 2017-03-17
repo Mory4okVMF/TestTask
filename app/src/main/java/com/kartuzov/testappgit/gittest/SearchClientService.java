@@ -10,7 +10,7 @@ import retrofit2.Call;
  * Created by Mory4ok on 14.03.17.
  */
 
-public interface MyInterface {
+public interface SearchClientService {
 
     @GET("/search/users")
     Call<UsersSearch> users(@Query("q") String query);

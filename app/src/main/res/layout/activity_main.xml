@@ -18,23 +18,6 @@
         android:layout_alignParentTop="true"
         android:id="@+id/name"  />
 
-    <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_below="@+id/name"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="31dp">
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical"
-            android:id="@+id/table"
-            >
-
-        </LinearLayout>
-    </ScrollView>
-
     <Button
         android:text="Найти"
         android:layout_width="wrap_content"
@@ -42,4 +25,16 @@
         android:layout_alignParentTop="true"
         android:layout_toEndOf="@+id/name"
         android:id="@+id/search" />
+
+    <ListView
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/search"
+        android:layout_toStartOf="@+id/search"
+        android:layout_marginTop="13dp"
+        android:layout_alignParentEnd="true"
+        android:divider="@color/colorPrimaryDark"
+        android:dividerHeight="@dimen/twodp" />
+
 </RelativeLayout>
